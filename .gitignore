@@ -1,6 +1,11 @@
 # Logs
 logs
 *.log
+*.DS_Store
+
+public/fonts/
+public/javascripts/
+public/stylesheets/
 
 # Runtime data
 pids

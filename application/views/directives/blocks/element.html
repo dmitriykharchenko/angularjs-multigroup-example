@@ -1,0 +1,15 @@
+<div class="panel panel-success" ng-controller="element">
+  <div class="panel-heading" ng-style="{ 'border-bottom': '5px solid ' + element.region.color }">
+    {{ element.first_name }} {{ element.last_name }}
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+      <label>region:</label>
+      <select
+        class="form-control"
+        ng-model="element.region"
+        ng-options="region.name for region in regions">
+      </select>
+    </div>
+  </div>
+</div>

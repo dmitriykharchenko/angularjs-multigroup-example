@@ -1,0 +1,8 @@
+<ul class="group_list">
+  <li class="element" ng-repeat="element in elements">
+    <div ng-include="elementTemplate"></div>
+  </li>
+  <li class="subgroup" ng-repeat="group in groups">
+    <div ng-include="'directives/groups/subgroup'"></div>
+  </li>
+</ul>

@@ -1,4 +1,16 @@
 angularjs-multigroup-example
 ============================
 
-Shows one of ways to create multilevel groups
+Example of multilevel grouping with live updated implementation in angularjs.
+
+### Start
+
+```
+$ npm install
+$ open public/index.html
+
+```
+
+--------
+
+Needs performance optiomization.

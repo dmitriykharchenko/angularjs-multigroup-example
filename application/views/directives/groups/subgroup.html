@@ -1,0 +1,12 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    {{ group.group_by }} <i class="fa fa-angle-right"></i> {{ group.name }}
+  </div>
+  <div class="panel-body">
+    <app-group
+      element-template="elementTemplate"
+      collection='group.collection'
+      group-fields='group_fields'>
+    </app-group>
+  </div>
+</div>

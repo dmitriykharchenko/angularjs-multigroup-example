@@ -1,0 +1,29 @@
+<div class="blocks_controls row">
+  <form>
+    <div class="col-sm-3" ng-show="groupFields">
+      <label class="control-label" for="field_groups">Groups</label>
+      <select
+        id="field_groups"
+        class="form-control m-bot15"
+        name="field_groups"
+        ng-model="group_by_field"
+        ng-options="option.key as option.title for option in groupFields">
+      </select>
+    </div>
+
+    <div class="col-sm-9" ng-show="sortFields">
+      <label class="control-label" for="field_groups">Sort by</label>
+      <span ng-repeat="field in sortFields" ng-click="toggle_sorting(field.key)">
+        {{ field.title }}
+      </span>
+    </div>
+
+  </form>
+</div>
+<div class="blocks_container">
+  <app-group
+    element-template="'directives/blocks/element'"
+    collection="collection"
+    group-fields="groupByFields">
+  </app-group>
+</div>
